@@ -6,7 +6,9 @@ app = FastAPI()
 async def root():
     return{
         "Hello":"Pragun",
-        "Mobile":"854745770"   
+        "Mobile":"854745770",
+        "name":"jaswal",
+        "Mobile":"123654987"    
            }
 
 # uvicorn main:app --reload   to run locally
