@@ -1,0 +1,14 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: Fast-api
+    src: ./
+    engine: python3.9
+    primary: true
+    public: true
+  - name: api
+    src: ./
+    engine: python3.9
+    dev: ../.venv/bin/uvicorn main:app --port $PORT --reload # start the micro in development mode
+    path: api
+    public: true
